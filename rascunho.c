@@ -5,9 +5,9 @@ void imprimirTabuleiro (int tabuleiro[10][10]) {
     printf("Imprimindo tabuleiro...\n");
 
     // Cabeçalho com letras A-J
-    printf("     ");
+    printf("    ");
     for (int j = 0; j < 10; j++) {
-        printf(" %c ", 'A' + j);
+        printf(" %c  ", 'A' + j);
     }
     printf("\n");
 
@@ -19,7 +19,7 @@ void imprimirTabuleiro (int tabuleiro[10][10]) {
             printf("%d-  ", i+1);
 
         for (int j = 0; j < 10; j++) {
-            printf("%d  ", tabuleiro[i][j]);
+            printf("%ds  ", tabuleiro[i][j]);
         }
         printf("\n");
     }
